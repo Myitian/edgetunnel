@@ -4,7 +4,7 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '90cd4a77-141a-43c9-991b-08263cfe9c10';
+let userID = '4d379245-826f-44a6-9e17-fa9d5ec83221';
 
 let proxyIP = '';// 小白勿动，该地址并不影响你的网速，这是给CF代理使用的。'cdn.xn--b6gac.eu.org, cdn-all.xn--b6gac.eu.org'
 
@@ -38,24 +38,47 @@ let go2Socks5s = [
 	'*.loadshare.org',
 ];
 let addresses = [
-	//当sub为空时启用本地优选域名/优选IP，若不带端口号 TLS默认端口为443，#号后为备注别名
-	/*
-	'Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz#加入我的频道t.me/CMLiussss解锁更多优选节点',
-	'visa.cn:443',
-	'www.visa.com:8443',
-	'cis.visa.com:2053',
-	'africa.visa.com:2083',
-	'www.visa.com.sg:2087',
-	'www.visaeurope.at:2096',
-	'www.visa.com.mt:8443',
-	'qa.visamiddleeast.com',
-	'time.is',
-	'www.wto.org:8443',
-	'chatgpt.com:2087',
-	'icook.hk',
-	'104.17.0.0#IPv4',
-	'[2606:4700::]#IPv6'
-	*/
+"211.207.106.155:12345#ICN-AP-Seoul-84-6.56",
+"222.235.135.123:10238#ICN-AP-Seoul-74-6.35",
+"61.41.237.69:10443#ICN-AP-Seoul-97-6.21",
+"106.244.196.196:30005#ICN-AP-Seoul-58-6.20",
+"182.226.53.214:12589#ICN-AP-Seoul-62-6.13",
+"45.78.53.43:2501#KIX-AP-Osaka-97-6.02",
+"211.219.44.149:50003#ICN-AP-Seoul-102-5.60",
+"211.108.194.141:50003#ICN-AP-Seoul-72-5.58",
+"119.198.34.151:50001#ICN-AP-Seoul-104-5.40",
+"182.213.153.243:19888#NRT-AP-Tokyo-100-5.36",
+"1.236.233.194:50003#ICN-AP-Seoul-60-5.35",
+"27.116.108.61:30012#ICN-AP-Seoul-81-5.12",
+"220.81.117.120:10218#ICN-AP-Seoul-88-5.11",
+"106.241.78.205:11001#NRT-AP-Tokyo-100-5.10",
+"121.139.174.91:50003#ICN-AP-Seoul-107-4.95",
+"112.165.35.70:10001#ICN-AP-Seoul-107-4.90",
+"14.43.88.199:10001#KIX-AP-Osaka-115-4.72",
+"121.174.123.188:30025#ICN-AP-Seoul-107-4.69",
+"121.144.201.72:10005#ICN-AP-Seoul-102-4.68",
+"118.40.112.188:10081#ICN-AP-Seoul-108-4.52",
+"114.94.49.3:4343#SIN-AP-Singapore-238-4.13",
+"112.168.173.214:50003#ICN-AP-Seoul-87-4.11",
+"154.17.12.14:38609#LAX-NA-LosAngeles-168-4.10",
+"61.82.242.222:27016#KIX-AP-Osaka-114-3.87",
+"121.146.38.125:13333#FUK-AP-Fukuoka-104-3.82",
+"175.195.48.68:10116#ICN-AP-Seoul-105-3.81",
+"91.217.139.121:8443#LAX-NA-LosAngeles-168-3.71",
+"185.194.148.227:27047#LAX-NA-LosAngeles-171-3.59",
+"103.99.115.232:1443#LAX-NA-LosAngeles-164-3.48",
+"38.150.0.49:587#MCI-NA-KansasCity-174-3.45",
+"125.180.223.126:19150#ICN-AP-Seoul-210-3.41",
+"5.181.219.103:16238#LAX-NA-LosAngeles-165-3.31",
+"185.238.248.47:11876#LAX-NA-LosAngeles-165-3.29",
+"45.12.88.148:19479#LAX-NA-LosAngeles-173-3.15",
+"154.21.85.62:22353#LAX-NA-LosAngeles-179-3.11",
+"185.201.227.192:22799#LAX-NA-LosAngeles-175-3.09",
+"202.91.35.102:27911#LAX-NA-LosAngeles-177-3.09",
+"103.99.179.8:43327#LAX-NA-LosAngeles-178-3.06",
+"212.103.62.244:19560#LAX-NA-LosAngeles-168-3.05",
+"103.94.185.172:34567#LAX-NA-LosAngeles-178-3.01",
+
 ];
 let addressesapi = [];
 let addressesnotls = [
